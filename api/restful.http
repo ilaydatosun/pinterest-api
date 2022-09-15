@@ -1,0 +1,31 @@
+@BASE_URL=http://127.0.0.1:3001/api
+
+GET {{BASE_URL}}/posts
+###
+
+GET {{BASE_URL}}/posts/6304b3a8811a4935920379d5
+###
+POST {{BASE_URL}}/posts
+Content-Type: application/json
+
+{
+"title": "pinterest",
+"userName":"ilayda8",
+"photoURL":"https://i.pinimg.com/564x/52/93/47/529347fb4661ec3b3c91e8d94d5ed350.jpg",
+"comments":"fdgfv"
+}
+###
+PATCH {{BASE_URL}}/posts/6304b3c6811a4935920379d7
+Content-Type: application/json
+
+{
+"title": "pinterest",
+"userName":"ilayda",
+"photoURL":"https://i.pinimg.com/564x/5e/b6/88/5eb6880deeac3b952588a4178f2372bb.jpg",
+"comments":"rvervrev"
+}
+###
+DELETE  {{BASE_URL}}/posts/6304b3fd811a4935920379db
+
+Content-Type: application/json
+
